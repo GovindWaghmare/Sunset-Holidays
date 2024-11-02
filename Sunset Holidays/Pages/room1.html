@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunset Holidays</title>
+  <link rel="stylesheet" href="room1.css">
+  <link rel="icon" href="images/logo.jpg">
+
+  <script src="room1.js"></script>  
+</head>
+<body>
+  <script src="room1.js"></script>  
+
+<!-- Header Section -->
+  <header class="header">
+    <div class="logo">Sunset Holidays</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="E:\Sunset Holidays\index.html">Home</a></li>
+        <li><a href="#products">Rooms</a></li>
+        <li><a href="E:\Sunset Holidays\Pages\about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<div class="hero-slider">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('images/room1.jpg');"></div>
+      <div class="slide" style="background-image: url('images/room2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/room3.jpg');"></div>
+    </div>
+    <div class="hero-content">
+    </div>
+    <div class="navigation">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </div>
+  
+  
+<!-- Room Review Section -->
+  <!-- ============================================================= -->
+  <div class="main-container">
+    <!-- Left Section -->
+    <div class="left-container">
+      <!-- Room Overview -->
+      <div class="room-overview">
+        <h2>ROOM OVERVIEW</h2>
+        <p>
+          Measuring a generous 45 sq mts, these spaces are ideal for up to 3 adults (or 2 adults and 2 kids). 
+          Offering 1 bedroom and 1 living room, it's a haven for families seeking a delightful retreat.
+        </p>
+        <p class="highlight">
+          Complimentary Minibar - Replenished on 4th Night | Extended Breakfast Hours Till Noon
+        </p>
+      </div>
+  
+      <!-- Facilities -->
+      <div class="amenities">
+        <h2>Facilities</h2>
+          <div class="amenities-grid">
+          <div class="amenity-item">24-hour room service</div>
+          <div class="amenity-item">Free Wi-Fi in all rooms!</div>
+          <div class="amenity-item">Check-in/out [express]</div>
+          <div class="amenity-item">Luggage storage</div>
+          <div class="amenity-item">Car park [on-site]</div>
+          <div class="amenity-item">Air conditioning</div>
+          <div class="amenity-item">Daily housekeeping</div>
+          <div class="amenity-item">Front desk [24-hour]</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Section (Booking Form) -->
+    <div class="booking-form">
+      <h2>BOOK YOUR SUITE</h2>
+      <form>
+        <label for="checkin">CHECK IN</label>
+        <input type="date" id="checkin" name="checkin">
+        
+        <label for="checkout">CHECK OUT</label>
+        <input type="date" id="checkout" name="checkout">
+        
+        <label for="guests">Guests</label>
+        <select id="guests" name="guests">
+          <option>Please, select date first</option>
+        </select>
+        
+        <button type="submit">BOOK NOW</button>
+      </form>
+    </div>
+  </div>
+
+<!-- ===================================================================== -->
+<!-- Room Photos Section -->
+<div class="gallery">
+ <h2>Room Title</h2>
+ <p>
+   Lorem ipsum dolor, sit amet 
+   consectetur adipisicing elit. 
+   Laborum, error, esse est ut explicabo 
+   vitae ipsum quibusdam nisi p
+   raesentium molestiae, rem velit 
+   nesciunt soluta magni fuga. 
+   Qui sed veritatis assumenda?
+ </p>
+ 
+ <div class="gallery-grid">
+   <div class="gallery-item">
+     <img src="images/room1.jpg" alt="Nam vitae odio" onclick="openPopup(this)">
+     <h3>Image 1</h3>
+   </div>
+   
+   <div class="gallery-item">
+     <img src="images/room2.jpg" alt="Integer ornare" onclick="openPopup(this)">
+     <h3>Image 2</h3>
+   </div>
+   <div class="gallery-item">
+     <img src="images/room3.jpg"  alt="Cras non augue" onclick="openPopup(this)">
+     <h3>Image 3</h3>
+   </div>
+   <div class="gallery-item">
+     <img src="images/room4.jpg" alt="Dolor lacus" onclick="openPopup(this)">
+     <h3>Image 4</h3>
+   </div>
+ </div>
+</div>
+
+
+<!-- Popup container -->
+<div id="popup" class="popup" onclick="closePopup()">
+ <span class="close">&times;</span>
+ <img class="popup-content" id="popupImage">
+</div>
+
+<!-- ======================================================== -->
+
+<!-- Room Details Section -->   
+<!-- <div class="list-container">
+ <div class="list-item">
+   <h2>Features</h2>
+   <ul>
+     <li>Room size: 16 m²/172 ft²</li>
+     <li>The second item</li>
+     <li>Shower</li>
+   </ul>
+ </div>
+
+ <div class="list-item">
+   <h2>Bathroom And Toiletries</h2>
+   <ul>
+     <li>Bathrobes</li>
+     <li>Mirror Private bathroom</li>
+     <li>Toiletries</li>
+     <li>Towels</li>
+   </ul>
+ </div>
+ 
+ <div class="list-item">
+   <h2>Entertainments</h2>
+   <ul>
+     <li>Free Wi-Fi in all rooms!</li>
+     <li>Satellite/cable channels</li>
+     <li>Telephone</li>
+   </ul>
+ </div><div class="list-item">
+   <h2>Comfort</h2>
+   <ul>
+     <li>Air conditioning</li>
+     <li>Fan</li>
+     <li>Linens</li>
+   </ul>
+ </div>
+</div>
+<div class="list-container">
+ <div class="list-item">
+   <h2>Dinning, Drinking and Snacking</h2>
+   <ul>
+     <li>Coffee/tea maker</li>
+   </ul>
+ </div>
+
+ <div class="list-item">
+   <h2>Layout And Furnishing</h2>
+   <ul>
+     <li>Seating area</li>
+   </ul>
+ </div>
+ 
+ <div class="list-item">
+   <h2>Clothing And Loundry</h2>
+   <ul>
+     <li>Closet</li>
+   </ul>
+ </div><div class="list-item">
+   <h2>Safety</h2>
+   <ul>
+     <li>Fire extinguisher</li>
+   </ul>
+ </div>
+</div> -->
+<!-- ============================================== -->
+<!-- =========================================================================== -->
+
+<!-- footer section -->
+<!-- =================================================== -->
+
+<footer>
+  <div class="footer-container">
+      <!-- Logo and About Section -->
+      <div class="footer-section about">
+          <img src="logo.jpg" alt="BoatCraft Logo" class="logo">
+          <p>BoatCraft was established by John Fernandes in 1997. Today, with more than 85 employees, BoatCraft has earned a leading position in the boat building industry.</p>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://x.com/?lang=en&mx=2"><i class="fab fa-twitter"></i></a>s
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Charter</a></li>
+          </ul>
+      </div>
+      
+      <!-- Help Center Section -->
+      <div class="footer-section">
+          <h3>Help Center</h3>
+          <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+          </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="footer-section">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 206/3, Ground Floor, Madel, Sernabatim Colva, Salcete, GOA - 403708</p>
+          <p><i class="fas fa-envelope"></i> sunset@holidays.com</p>
+          <p><i class="fas fa-phone"></i> +91 99999 99999</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Copyright © 2024 | SunsetHolidays Services Private Ltd</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+      <!-- <div class="social-icons">
+          <a href="https://x.com/?lang=en&mx=2"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+      </div> -->
+<!-- ==================================================== -->
+</body>
+</html>
